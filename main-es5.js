@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navigation></app-navigation>\n<router-outlet></router-outlet>\n"
+module.exports = "<app-navigation></app-navigation>\r\n\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "<app-navigation></app-navigation>\n<router-outlet></router-out
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<br />\n<br />\n<br />\n<div class=\"container\">\n  <div class=\"row justify-content-md-center\">\n    <div class=\"col\">\n        <div class=\"card\">\n          <div class=\"card-body\">\n            <h5 class=\"card-title\">Hi! I'm Aaron Marks!</h5>\n            <h6 class=\"card-subtitle mb-2 text-muted\">I build things with code - like this website.</h6>\n            <br />\n            <p class=\"card-text\">I'm a software developer with a mind for education. With 6+ years of professional experience in software development, I look forward to working with companies and individuals that focus on writing high quality software while fostering an environment of continuous learning, diversity, inclusion, and collaboration.</p>\n            <br />\n            <h6>I am...</h6>\n            <ul>\n              <li>a back-end software developer using C#, .NET Core, Entity Framework, SQL Server,</li>\n              <li>a front-end developer using HTML, CSS, JavaScript, Angular, Bootstrap, Angular Material,</li>\n              <li>an educator, specializing in web and mobile application development courses.</li>\n            </ul>\n            <h6>I am not..</h6>\n            <ul>\n              <li>a designer of any sort,</li>\n              <li>a mobile application developer,</li>\n              <li>a manager,</li>\n              <li>a workaholic.</li>\n            </ul>\n            <a href=\"#\" class=\"card-link\"></a>\n            <a href=\"#\" class=\"card-link\"></a>\n          </div>\n        </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container w-full md:max-w-3xl mx-auto pt-10\">\r\n  <div class=\"w-full rounded overflow-hidden shadow-lg\">\r\n    <div class=\"px-6 py-4\">\r\n      <div class=\"font-bold text-xl mb-2\">Hi, I'm Aaron Marks!</div>\r\n      <div class=\"text-lg mb-2\">I like making things with code... like this website.</div>\r\n      <div class=\"text-black text-base\">\r\n        <h6>I am...</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">a back-end software developer using C#, .NET Core, Entity Framework, SQL Server,</li>\r\n              <li class=\"list-disc\">a front-end developer using HTML, CSS, JavaScript, Angular, Bootstrap, Angular Material,</li>\r\n              <li class=\"list-disc\">an educator, specializing in web and mobile application development courses.</li>\r\n            </ul>\r\n            <br />\r\n            <h6>I am not..</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">a designer of any sort,</li>\r\n              <li class=\"list-disc\">a mobile application developer,</li>\r\n              <li class=\"list-disc\">a manager,</li>\r\n              <li class=\"list-disc\">a workaholic.</li>\r\n            </ul>\r\n          </div>\r\n    </div>\r\n    <div class=\"px-6 py-4\">\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<br />\n<br />\n<br />\n<div class=\"container\">\n  <div clas
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n    <a class=\"navbar-brand\" href=\"#\">AM ></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\"\n    data-target=\"#navbar\" aria-controls=\"navbar\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n  \n    <div class=\"collapse navbar-collapse\" id=\"navbar\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" [routerLink]=\"['/']\" [routerLinkActive]=\"'active'\" [routerLinkActiveOptions]=\"{exact: true}\">Home</a>\n        </li>\n        <li class=\"navbar-nav mr-auto\">\n          <a class=\"nav-link\" [routerLink]=\"['/resume']\" [routerLinkActive]=\"'active'\">Resume</a>\n        </li>\n      </ul>\n    </div>\n  </nav>"
+module.exports = "<style>\r\n  #menu-toggle:checked + #menu {\r\n    display: block;\r\n  }\r\n</style>\r\n\r\n<nav class=\"flex items-center justify-between flex-wrap bg-black p-6\">\r\n  <div class=\"flex items-center flex-shrink-0 text-white mr-6\">\r\n    <span class=\"font-semibold text-xl tracking-tight\">Aaron Marks</span>\r\n  </div>\r\n  <div class=\"w-full block flex-grow lg:flex lg:items-center lg:w-auto\">\r\n    <div class=\"text-sm lg:flex-grow\">\r\n      <a class=\"block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-200 mr-4\" [routerLink]=\"['/']\" [routerLinkActive]=\"'active'\" [routerLinkActiveOptions]=\"{exact: true}\">\r\n        Home\r\n      </a>\r\n      <a class=\"block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-200 mr-4\" [routerLink]=\"['/resume']\" [routerLinkActive]=\"'active'\">\r\n        Resume\r\n      </a>\r\n    </div>\r\n    <!--\r\n    <div>\r\n      <a href=\"#\" class=\"inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0\">Download</a>\r\n    </div>\r\n    -->\r\n  </div>\r\n</nav>"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<br />\n<br />\n<br />\n<br />\n<br />\n<p>\n  Work in progress.\n</p>\n"
+module.exports = "<div class=\"flex mb-4\">\r\n  <br />\r\n  <br />\r\n  <br />\r\n  <br />\r\n  <br />\r\n  <p style=\"padding-left: 10px;\">\r\n    Work in progress.\r\n  </p>\r\n</div>\r\n"
 
 /***/ }),
 
