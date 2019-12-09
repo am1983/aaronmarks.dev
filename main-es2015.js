@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container w-full md:max-w-3xl mx-auto pt-10\">\r\n  <div class=\"w-full rounded overflow-hidden shadow-lg\">\r\n    <div class=\"px-6 py-4\">\r\n      <div class=\"font-bold text-xl mb-2\">Hi, I'm Aaron Marks!</div>\r\n      <div class=\"text-lg mb-2\">I like making things with code... like this website.</div>\r\n      <div class=\"text-black text-base\">\r\n        <h6>I am...</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">a back-end software developer using C#, .NET Core, Entity Framework, SQL Server,</li>\r\n              <li class=\"list-disc\">a front-end developer using HTML, CSS, JavaScript, Angular, Bootstrap, Angular Material,</li>\r\n              <li class=\"list-disc\">an educator, specializing in web and mobile application development courses.</li>\r\n            </ul>\r\n            <br />\r\n            <h6>I am not..</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">a designer of any sort,</li>\r\n              <li class=\"list-disc\">a mobile application developer,</li>\r\n              <li class=\"list-disc\">a manager,</li>\r\n              <li class=\"list-disc\">a workaholic.</li>\r\n            </ul>\r\n            <br />\r\n            <h6>This site was made using...</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">Angular 8,</li>\r\n              <li class=\"list-disc\">Tailwind CSS</li>\r\n            </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"px-6 py-4\">\r\n    </div>\r\n  </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container w-full md:max-w-3xl mx-auto pt-10\">\r\n  <div class=\"w-full rounded overflow-hidden shadow-lg\">\r\n    <div class=\"px-6 py-4\">\r\n      <div class=\"font-bold text-xl mb-2\">Hi, I'm Aaron Marks!</div>\r\n      <div class=\"text-lg mb-2\">I like making things with code... like this website.</div>\r\n      <div class=\"text-black text-base\">\r\n        <h6>I am...</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">a back-end software developer using C#, .NET Core, Entity Framework, SQL Server,</li>\r\n              <li class=\"list-disc\">a front-end developer using HTML, CSS, JavaScript, Angular, Bootstrap, Angular Material,</li>\r\n              <li class=\"list-disc\">an educator, specializing in web and mobile application development courses.</li>\r\n            </ul>\r\n            <br />\r\n            <h6>I am not..</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">a designer of any sort,</li>\r\n              <li class=\"list-disc\">a mobile application developer,</li>\r\n              <li class=\"list-disc\">a manager,</li>\r\n              <li class=\"list-disc\">a workaholic.</li>\r\n            </ul>\r\n            <br />\r\n            <h6>This site was made using...</h6>\r\n            <ul class=\"list-inside bg-white px-5\">\r\n              <li class=\"list-disc\">Angular 8 ({{ angularVersion }}),</li>\r\n              <li class=\"list-disc\">Tailwind CSS</li>\r\n            </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"px-6 py-4\">\r\n    </div>\r\n  </div>\r\n</div>");
 
 /***/ }),
 
@@ -462,7 +462,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let HomeComponent = class HomeComponent {
-    constructor() { }
+    constructor() {
+        this.angularVersion = _angular_core__WEBPACK_IMPORTED_MODULE_1__["VERSION"].full;
+    }
     ngOnInit() {
     }
 };
@@ -631,7 +633,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\amdev\Documents\aaronmarks.dev\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Projects\aaronmarks.dev\src\main.ts */"./src/main.ts");
 
 
 /***/ })
