@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'resume', component: ResumeComponent }
+  {
+    path: '',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'resume',
+    loadChildren: () => import('./resume/resume.module').then(m => m.ResumeModule)
+  }
 ];
 
 @NgModule({
