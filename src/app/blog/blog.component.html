@@ -1,0 +1,23 @@
+<div *ngIf="isBusy">
+    Retrieving posts from Prismic API.
+</div>
+<div *ngIf="posts && !isBusy">
+    <div class="px-4 py-4" *ngFor="let post of posts"> 
+        <div class="block md:flex md:-mx-2 md:h-full">
+            <ng-container>
+                <div class="w-full md:mx-2 mb-4 md:mb-0">
+                    <div class="bg-orange-200 rounded-lg shadow-lg relative md:h-full">
+                        <div class="p-4 h-auto">
+                            <span class="block text-black font-semibold mb-2 text-lg md:text-base lg:text-lg" *ngFor="let title of post.data.title">
+                            {{ title.text }}
+                            </span>
+                            <div class="text-black leading-relaxed block post-body" [innerHTML]="PrismicDOM.RichText.asHtml(post.data.text, '', htmlSerializer)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
