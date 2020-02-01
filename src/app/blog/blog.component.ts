@@ -34,13 +34,11 @@ export class BlogComponent implements OnInit {
       // Add a class to paragraph elements
       case Elements.paragraph:
         if (children[0].length > 0) {
+          // Paragraph isn't empty... so it isn't a line break.
           return '<p class="py-4">' + children.join('') + '</p>';
         }
         return null;
       // Don't wrap images in a <p> tag
-      case Elements.image:
-        return '<img src="' + element.url + '" alt="' + element.alt + '">';
-      // Return null to stick with the default behavior
       default:
         return null;
     }
