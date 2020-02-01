@@ -6,12 +6,15 @@
         <div class="block md:flex md:-mx-2 md:h-full">
             <ng-container>
                 <div class="w-full md:mx-2 mb-4 md:mb-0">
-                    <div class="bg-orange-200 rounded-lg shadow-lg relative md:h-full">
+                    <div class="bg-blue-200 rounded-lg shadow-lg relative md:h-full">
                         <div class="p-4 h-auto">
                             <span class="block text-black font-semibold mb-2 text-lg md:text-base lg:text-lg" *ngFor="let title of post.data.title">
                             {{ title.text }}
+                                <span class="px-4 text-gray-700 font-light mb-2 text-lg md:text-base lg:text-lg">
+                                    {{ post.first_publication_date | date: 'yyyy-MM-dd h:mm:ss a' }}
+                                </span>
                             </span>
-                            <div class="text-black leading-relaxed block post-body" [innerHTML]="PrismicDOM.RichText.asHtml(post.data.text, '', htmlSerializer)">
+                            <div class="text-black leading-relaxed block" [innerHTML]="PrismicDOM.RichText.asHtml(post.data.text, '', htmlSerializer)">
                             </div>
                         </div>
                     </div>
