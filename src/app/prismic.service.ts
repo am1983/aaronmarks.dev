@@ -17,7 +17,6 @@ export class PrismicService {
           { orderings : '[post.first_publication_date] DESC' });
         })
       .then((response) => {
-        console.dir(response);
         return response.results;
       }, (err) => {
         console.log('Something went wrong: ', err);

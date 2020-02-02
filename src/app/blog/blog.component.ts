@@ -25,7 +25,6 @@ export class BlogComponent implements OnInit {
       this.posts = posts;
       this.isBusy = false;
     });
-    console.dir(this.posts);
   }
 
   htmlSerializer(type, element, content, children) {
