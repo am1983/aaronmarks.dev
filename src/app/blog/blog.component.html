@@ -16,6 +16,11 @@
                             </span>
                             <div class="text-black leading-relaxed block" [innerHTML]="PrismicDOM.RichText.asHtml(post.data.text, '', htmlSerializer)">
                             </div>
+                            <div class="border-t border-black py-1" *ngIf="post.tags.length">
+                                <ng-container *ngFor="let tag of post.tags">
+                                    <app-callout [callout]="tag"></app-callout>
+                                </ng-container>
+                            </div>
                         </div>
                     </div>
                 </div>
