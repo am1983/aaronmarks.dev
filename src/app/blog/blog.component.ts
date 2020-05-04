@@ -8,7 +8,7 @@ import { PrismicService } from '../prismic.service';
 })
 export class BlogComponent implements OnInit {
   // tslint:disable-next-line: ban-types
-  posts: void | Object[];
+  posts!: void | Object[];
   isBusy = false;
   PrismicDOM = PrismicDOM;
 
@@ -21,13 +21,13 @@ export class BlogComponent implements OnInit {
   getBlog(): void {
     this.isBusy = true;
 
-    this.prismicService.test().then(posts => {
+    this.prismicService.test().then((posts: any) => {
       this.posts = posts;
       this.isBusy = false;
     });
   }
 
-  htmlSerializer(type, element, content, children) {
+  htmlSerializer(type: any, element: any, content: any, children: any) {
     const Elements = PrismicDOM.RichText.Elements;
     switch (type) {
       // Add a class to paragraph elements

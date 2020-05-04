@@ -8,13 +8,15 @@
                         {{ card.title }}
                         </span>
                         <div class="text-black leading-relaxed block">
-                            <br />
-                            {{ card.subtitle }}
-                            <br />
-                            {{ card.info }}
-                            <br />
-                            <br />
-                            {{ card.notes }}
+                            <div *ngIf="card.subtitle">
+                              {{ card.subtitle }}
+                            </div>
+                            <div *ngIf="card.info">
+                              {{ card.info }}
+                            </div>
+                            <div *ngIf="card.notes">
+                              {{ card.notes }}
+                            </div>
                         </div>
                         <div class="py-4" *ngIf="card.link">
                             <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded" href="{{card.link}}">{{card.linkText}}</a>

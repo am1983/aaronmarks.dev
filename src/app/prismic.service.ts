@@ -11,14 +11,14 @@ export class PrismicService {
 
   test() {
     return Prismic.getApi(CONFIG.apiEndpoint, {})
-      .then((api) => {
+      .then((api: any) => {
         return api.query(
           Prismic.Predicates.at('document.type', 'post'),
           { orderings : '[post.first_publication_date] DESC' });
         })
-      .then((response) => {
+      .then((response: any) => {
         return response.results;
-      }, (err) => {
+      }, (err: any) => {
         console.log('Something went wrong: ', err);
       });
   }

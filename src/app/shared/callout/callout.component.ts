@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./callout.component.scss']
 })
 export class CalloutComponent implements OnInit {
-  @Input() callout: string;
+  @Input() callout!: string;
 
   constructor() { }
 

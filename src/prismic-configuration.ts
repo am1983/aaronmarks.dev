@@ -7,7 +7,7 @@ export interface PrismicConfiguration {
 
 export const CONFIG: PrismicConfiguration = {
     apiEndpoint: 'https://blog-aaronmarks-dev.cdn.prismic.io/api/v2',
-    linkResolver(doc) {
+    linkResolver(doc: any) {
         return '/';
     }
 };

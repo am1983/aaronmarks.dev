@@ -80,11 +80,11 @@ export class ResumeComponent implements OnInit {
 
   volunteerWork: CardContent[] = [
     {
-      title: 'Executive Committee Member / Communications Chair',
-      subtitle: 'Bullitt County Democratic Party',
-      notes: 'Manage social media presence, support website.',
-      link: 'http://www.bullittdemocrats.com',
-      linkText: 'www.bullittdemocrats.com'
+      title: 'Mentor',
+      subtitle: 'Code Louisville',
+      notes: 'Helping new developers learn C# and other tech-related skills.',
+      link: 'https://codelouisville.org/',
+      linkText: 'codelouisville.org'
     },
     {
       title: 'Member',
